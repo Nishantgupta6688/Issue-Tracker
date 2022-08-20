@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Issue Tracker</title>
+</head>
+<body>
+    <div>   
+        <table border="1">
+            <tr>
+                <td height="25px">
+                    <h1>Issue Tracker app - using HTML , CSS , Javascript </h1>
+                </td>
+            </tr>
+            <tr>
+                <td height="400px" valign="top">
+                    <div class="container">
+                        <div>
+                            <button onclick="handlers.displayIssues()">Display issues</button>
+                            <button onclick="handlers.toggleAll()">Toggle All</button>
+                        </div> <br>
+
+                        <div>
+                            <input type="text" placeholder="Enter issue" id="issueText">
+                            <button onclick="handlers.addIssue()">Add</button>
+                        </div> <br>
+
+                        <div>
+                            <input type="number" placeholder="Enter Position" id="changeIssuePositionInput">
+                            <input type="text" placeholder="Enter Issue" id="changeIssueTextInput">
+                            <button onclick="handlers.changeIssue()">Change</button>
+                        </div> <br>
+
+                        <div>
+                            <input type="text" placeholder="Enter Position" id="toggleIssuePositionInput">
+                            <button onclick="handlers.toggleIssue()">Toggle</button>
+                        </div> <br>
+
+                        <div id="sideInstructions">
+                            <p>Hover on Issue or [X] button to get the help</p>
+                            <p>Click on Issue or [X] button to chnage status or delete Issue</p>
+                        </div> <br>
+                    </div>
+                    <hr/>
+                    <ul>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td heigth="20px">&copy;CODEGRAM | All Right Reserved To CODEGRAM</td>
+            </tr>
+        </table>
+        <script src="/js/script.js" type="text/javascript"></script>
+    </div>
+</body>
+</html>
